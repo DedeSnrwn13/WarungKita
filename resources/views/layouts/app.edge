@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		@include('layouts.head')
+		@!section('meta')
+		@!section('css')
+		@!section('title')
+
+		<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+		
+	</head>
+	<body>
+		{{-- nav --}}
+		<header>
+			<div class="container">
+				<nav class="header">
+					<div class="logo">
+						<img src="assets/images/navbar/K logo.png" alt="">
+						<span>WarungKita</span>
+					</div>
+				</nav>
+			</div>
+		</header>
+		{{-- end nav --}}
+
+		@!section('content')
+
+		{{-- footer --}}
+		
+		{{-- end footer --}}
+			
+	</body>
+	@!section('component')			
+		<script src="assets/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script src="assets/js/jquery.lazy.min.js" type="text/javascript" ></script>
+	    <script src="assets/js/slick.min.js" type="text/javascript" ></script>
+	
+	@!section('js')
+		<script src="assets/js/app.js" type="text/javascript" ></script>
+		
+</html>                     

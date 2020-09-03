@@ -1,0 +1,44 @@
+@import './header';
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    display: inline-block;
+}
+
+header {
+    width: 100%;
+    background-color: #306EE7;
+    position: fixed;
+    height: 80px;
+    .container {
+        max-width: 85%;
+        margin: 0 auto;
+        nav.header {
+            width: 100%;
+            position: relative;
+            .logo {
+                width: 15%;
+                float: left;
+                img {
+                    float: left;
+                    @include padding-y(27px);
+                }
+                span {
+                    float: left;
+                    @include padding-y(28.5px);
+                    color: #FFFFFF;
+                    font-size: 16px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
