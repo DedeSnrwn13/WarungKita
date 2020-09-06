@@ -18,20 +18,154 @@
 						<img src="assets/images/navbar/K logo.png" alt="">
 						<span>WarungKita</span>
 					</div>
+					<div class="navbar-list">
+						<ul>
+							<li><a href="" class="active">Beranda</a></li>
+							<li><a href="">Tentang</a></li>
+							<li><a href="">Laman Edukatif</a></li>
+							<li><a href="">Galeri Inspiratif</a></li>
+							<li><a href="">Toko</a></li>
+						</ul>
+					</div> 
+					<div class="nav-icon">
+						<!-- icon search -->
+						<a href="search.html">
+							<img src="assets/images/navbar/cari.png" alt="">
+						</a>
+						<!-- icon keranjang -->
+						<a href="#cart">
+							<img src="assets/images/navbar/Cart.png" class="cart" alt="">
+						</a>
+						<!-- icon chart -->
+						<a href="#chat">
+							<img src="assets/images/navbar/Chat.png" class="chat" alt="">
+						</a>
+						<!-- icon notif -->
+						<a href="#notifikasi">
+							<img src="assets/images/navbar/Notif.png" class="notif" alt="">
+						</a>
+					</div>
+					<div class="nav-account">
+						<img src="assets/images/navbar/fotoprofil.png" class="profil account" alt="">
+						<!-- icon dropdown -->
+						<img src="assets/images/navbar/dropdown-p.png" class="dropdown-p account" alt="">
+						
+					</div>
 				</nav>
+				<!-- popup akun -->
+				<div class="popup-account">
+					<div class="heading">
+						<span>Hello, Nazmi Javier</span>
+					</div>
+					<div class="body">
+						<ul>
+							<li><a href="#">Akun Saya</a></li>
+							<li><a href="#">Pembelian</a></li>
+							<li><a href="#">Wishlist</a></li>
+							<li class="lang"><span>Bahasa
+								<img src="assets/images/navbar/drop-lang.png" alt="">
+								</span>
+								<ul class="popup-lang">
+									<li><a href="#"><img src="assets/images/navbar/ID.png" alt="">Indonesia</a></li>
+									<li><a href="#"><img src="assets/images/navbar/EN.png" alt="">Inggris</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Keluar</a></li>
+						</ul>
+					</div>
+				</div>	
+
+				<!-- popup notif -->	
+				<div class="popup-notif">
+					<div class="heading">
+						<span>Notifikasi</span>
+					</div>
+					<div class="body">
+						<span>WarungKita</span>
+						<span>Terimakasih telah bergabung Bersama k...</span>
+					</div>
+					<div class="footer">
+						<span>Lihat Selengkapnya</span>
+					</div>
+				</div>
+
+				<!-- popup chat -->	
+				<div class="popup-chat">
+					<div class="heading">
+						<span>Pesan Anda</span>
+					</div>
+					<div class="body">
+						<div class="msg">
+							<img src="assets/images/navbar/wk-chat.png" alt="">
+							<div class="txt">
+								<span>WarugKita</span>
+								<span>Terimakasih.</span>
+							</div>
+							<div class="date">
+								<span>Agt, 14 2020</span>
+							</div>
+						</div>
+						<div class="msg">
+							<img src="assets/images/navbar/dany-chat.png" alt="">
+							<div class="txt">
+								<span>Pak Dany</span>
+								<span>Siap akan saya kirim.</span>
+							</div>
+							<div class="date">
+								<span>Agt, 14 2020</span>
+							</div>
+						</div>
+						<div class="msg">
+							<img src="assets/images/navbar/dede-chat.png" alt="">
+							<div class="txt">
+								<span>Dede Sunarwan</span>
+								<span>Barang habis dek.</span>
+							</div>
+							<div class="date">
+								<span>Agt, 14 2020</span>
+							</div>
+							
+						</div>
+					</div>
+					<div class="footer">
+						<span>Lihat Selengkapnya</span>
+					</div>
+				</div>
+
+				<!-- popup cart -->	
+				<div class="popup-cart">
+					<div class="heading">
+						<span>Keranjang</span>
+					</div>
+					<div class="body">
+						<div class="msg">
+							<img src="assets/images/navbar/wk-chat.png" alt="">
+							<div class="txt">
+								<span>Tanaman Hias Kaktus</span>
+								<span>1 Barang</span>
+								<span>Hapus</span>
+							</div>
+						</div>
+					</div>
+					<div class="footer">
+						<span>Check Out</span>
+					</div>
+				</div>
 			</div>
 		</header>
 		{{-- end nav --}}
 
+		
+
 		@!section('content')
 
-		{{-- footer --}}
+		<!-- footer -->
 		
-		{{-- end footer --}}
+		<!-- end footer -->
 			
 	</body>
 	@!section('component')			
-		<script src="assets/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script src="assets/js/jquery-3.5.1.js" type="text/javascript"></script>
 		<script src="assets/js/jquery.lazy.min.js" type="text/javascript" ></script>
 	    <script src="assets/js/slick.min.js" type="text/javascript" ></script>
 	

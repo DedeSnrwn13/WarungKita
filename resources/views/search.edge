@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pencarian | WarungKita</title>
+	<link rel="stylesheet" href="assets/css/search.css">
+</head>
+<body>
+	<div class="search">
+		<div class="box">
+			<div class="container">
+				<div class="close">
+					<a href="index.html">
+						<img src="assets/images/close.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="box-search">
+				<div class="container">
+					<div class="title">
+						<span>Pencarian</span>
+					</div>
+					<div class="body">
+						<div class="search-area">
+							<div class="input">
+								<input type="text" placeholder="Belanja apa ya hari ini?">
+							</div>
+							<a href="index.html" class="btn">
+								<img src="assets/images/search.png" alt="">
+							</a>
+						</div>
+						<div class="category">
+							<label class="container">
+								Semua
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">
+								Produk
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">
+								Artikel
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">
+								Galeri
+								<input type="checkbox" name="" id="">
+								<span class="checkmark"></span>
+							</label>
+						</div>
+
+						<div class="search-history">
+							<div class="title">
+								Pencarian Terakhir
+							</div>
+							<div id="body-search-history">
+								<span class="baten">Sepeda TDR 110</span>
+								<span class="baten">Galon</span>
+								<span class="baten">Gelas Kertas</span>
+								<span class="baten">Terminal</span>
+								<button>Hapus Riwayat</button>
+							</div>
+						</div>
+
+						<div class="search-popular">
+							<div class="title">
+								Pencarian Terpopuler
+							</div>
+							<div id="body-search-popular">
+								<button class="baten">jeruk</button>
+								<button class="baten">Tanaman Hias</button>
+								<button class="baten">Elektronik</button>
+								<button class="baten">Mainan</button>
+								<button class="baten">Promo</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+	<script>
+	// tambah class active di search-populer
+	var header = document.getElementById("body-search-popular");
+	var btns = header.getElementsByClassName("baten");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	  var current = document.getElementsByClassName("active");
+	  current[0].className = current[0].className.replace(" active", "");
+	  this.className += " active";
+	  });
+	}
+
+
+	// tambah class active di search-history
+	var header = document.getElementById("body-search-history");
+	var btns = header.getElementsByClassName("baten");
+	for (var i = 0; i < btns.length; i++) {
+	  btns[i].addEventListener("click", function() {
+	  var current = document.getElementsByClassName("active");
+	  current[0].className = current[0].className.replace(" active", "");
+	  this.className += " active";
+	  });
+	}
+</script>
+</body>
+</html>

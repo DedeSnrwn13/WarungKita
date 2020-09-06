@@ -7,6 +7,7 @@ mix.disableSuccessNotifications();
 mix.copy('resources/js/*.js', 'dist/assets/js/');
 
 mix.sass('resources/sass/style.scss', 'dist/assets/css')
+   .sass('resources/sass/search.scss', 'dist/assets/css')
 
 
 

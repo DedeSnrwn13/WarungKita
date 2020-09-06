@@ -8,66 +8,30 @@
 /** 
 ** raleway
 **/
-/*open sans */
+/* Playfair */
 
 @font-face {
-	font-family: OpenSans-Bold;
-    src:url(".././fonts/OpenSans-Bold.ttf");
+	font-family: PlayfairDisplay-Medium;
+    src:url(".././fonts/PlayfairDisplay-Medium.ttf");
+}
+
+ 
+/**
+/* Poppins */
+@font-face {
+  font-family: Poppins-Regular;
+  src: url(".././fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
-	font-family: OpenSans-Regular;
-    src:url(".././fonts/OpenSans-Regular.ttf");
+  font-family: Poppins-Medium;
+  src: url(".././fonts/Poppins-Medium.ttf");
 }
 
-@font-face  {
-  font-family: opensans-light;
-  src:url(".././fonts/OpenSans-Light.ttf");
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url(".././fonts/Poppins-SemiBold.ttf");
 }
-
-@font-face  {
-  font-family: opensans-italic;
-  src:url(".././fonts/OpenSans-Italic.ttf");
-}
-
-@font-face  {
-  font-family: OpenSans-Semibold;
-  src:url(".././fonts/OpenSans-SemiBold.ttf");
-}
-
-
-/**
-**/ 
-/*montserrat */
-
-@font-face  {
-  font-family: Montserrat-Bold;
-  src:url(".././fonts/Montserrat-Bold.ttf");
-} 
-
-@font-face  {
-  font-family: Montserrat-Regular;
-  src:url(".././fonts/Montserrat-Regular.ttf");
-} 
-
-/*roboto*/
-@font-face  {
-  font-family: Roboto-Medium;
-  src:url(".././fonts/Roboto-Medium_0.ttf");
-} 
-
-@font-face  {
-  font-family: Roboto-Thin;
-  src:url(".././fonts/Roboto-Thin.ttf");
-} 
-
-
-@font-face  {
-  font-family: Roboto-Bold;
-  src:url(".././fonts/Roboto-Bold.ttf");
-} 
-/**
-
 
 /**
 ** this for setup variable
