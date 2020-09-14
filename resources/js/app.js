@@ -25,7 +25,20 @@ $(document).ready(function(){
   	$(".cart").click(function(){
 	    $(".popup-cart").slideToggle(250);
 	});
+
+    
+  	// slick buat search item homepage
+	// $('#category-search-items').slick({
+	// 	slidesToShow: 3,
+	// 	slidesToScroll: 1,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 2000,
+	// });
 });
+
+
+
+
 	
 
 

@@ -1,0 +1,292 @@
+/**
+** this for first setup
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+** setup fonts
+**/
+/** 
+** raleway
+**/
+/* Playfair */
+@font-face {
+  font-family: PlayfairDisplay Medium;
+  src: url(".././fonts/PlayfairDisplay-Medium.ttf");
+}
+/**
+/* Poppins */
+@font-face {
+  font-family: Poppins Regular;
+  src: url(".././fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: Poppins Medium;
+  src: url(".././fonts/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: Poppins SemiBold;
+  src: url(".././fonts/Poppins-SemiBold.ttf");
+}
+/**
+** this for setup variable
+**/
+/* change option color */
+:root {
+  --primary: #5CAAF4;
+  --color-text-berita: #070707;
+  --line-and-side: #FDD34C;
+  --text-banner: #FFFFFF;
+  --buton: #073C64;
+  --footer: #073C64;
+  --bg-detail-berita-and-forum: #8E8E8E (9%);
+  --color-menu-bar: #0A0A0A;
+}
+
+.fl-left {
+  float: left;
+}
+.fl-right {
+  float: right;
+}
+.fl-none {
+  float: none;
+}
+
+.f-10 {
+  font-size: 10;
+}
+
+.f-11 {
+  font-size: 11;
+}
+
+.f-12 {
+  font-size: 12;
+}
+
+.f-13 {
+  font-size: 13;
+}
+
+.f-14 {
+  font-size: 14;
+}
+
+.f-15 {
+  font-size: 15;
+}
+
+.f-16 {
+  font-size: 16;
+}
+
+.f-17 {
+  font-size: 17;
+}
+
+.f-18 {
+  font-size: 18;
+}
+
+.f-19 {
+  font-size: 19;
+}
+
+.f-20 {
+  font-size: 20;
+}
+
+.f-21 {
+  font-size: 21;
+}
+
+.f-22 {
+  font-size: 22;
+}
+
+.f-23 {
+  font-size: 23;
+}
+
+.f-24 {
+  font-size: 24;
+}
+
+.f-25 {
+  font-size: 25;
+}
+
+.f-26 {
+  font-size: 26;
+}
+
+.f-27 {
+  font-size: 27;
+}
+
+.f-28 {
+  font-size: 28;
+}
+
+.f-29 {
+  font-size: 29;
+}
+
+.f-30 {
+  font-size: 30;
+}
+
+.f-31 {
+  font-size: 31;
+}
+
+.f-32 {
+  font-size: 32;
+}
+
+.f-33 {
+  font-size: 33;
+}
+
+.f-34 {
+  font-size: 34;
+}
+
+.f-35 {
+  font-size: 35;
+}
+
+.f-36 {
+  font-size: 36;
+}
+
+.f-37 {
+  font-size: 37;
+}
+
+.f-38 {
+  font-size: 38;
+}
+
+.f-39 {
+  font-size: 39;
+}
+
+.f-40 {
+  font-size: 40;
+}
+
+.d-none {
+  display: none;
+}
+.d-block {
+  display: block;
+}
+.d-ib {
+  display: inline-block;
+}
+.d-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.d-inline {
+  display: inline;
+}
+.d-i-flex {
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+}
+
+.w-5 {
+  width: 5%;
+}
+.w-10 {
+  width: 10%;
+}
+.w-15 {
+  width: 15%;
+}
+.w-20 {
+  width: 20%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-30 {
+  width: 30%;
+}
+.w-35 {
+  width: 35%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-45 {
+  width: 45%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-55 {
+  width: 55%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-65 {
+  width: 65%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-85 {
+  width: 85%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-95 {
+  width: 95%;
+}
+.w-100 {
+  width: 100%;
+}
+
+.h-25 {
+  height: 25%;
+}
+.h-50 {
+  height: 50%;
+}
+.h-75 {
+  height: 75%;
+}
+.h-100 {
+  height: 100%;
+}
+
+.ov-h {
+  overflow: hidden;
+}
+.ov-s {
+  overflow: scroll;
+}
+.ov-a {
+  overflow: auto;
+}

@@ -6,22 +6,24 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     background: #FFFFFF;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins, PlayfairDisplay", sans-serif;
 }
 
 a {
     display: inline-block;
 }
 
+// Bagian navbar
 header {
     width: 100%;
     background-color: #306EE7;
     height: 80px;
     position: fixed;
     top: 0;
-    
+    float: left;
+    z-index: 999999999;
     .container {
-        max-width: 85%;
+        max-width: 83%;
         margin: 0 auto;
         nav.header {
             width: 100%;
@@ -36,7 +38,7 @@ header {
                 }
                 span {
                     float: left;
-                    @include padding-y(28.5px);
+                    @include padding-y(31px);
                     color: #FFFFFF;
                     font-size: 16px;
                     margin-left: 5px;
@@ -45,7 +47,7 @@ header {
             .navbar-list {
                 width: unset;
                 float: left;
-                @include padding(0,0,0,82px);
+                @include padding(0, 0, 0, 90px);
                 ul {
                     display: block;
                     list-style: none;
@@ -54,33 +56,28 @@ header {
                         &:nth-child(2),
                         &:nth-child(3),
                         &:nth-child(4),
-                        &:nth-child(5){
+                        &:nth-child(5) {
                             margin-left: 32px;
                         }
-
-                        a{
+                        a {
                             color: #FFFFFF;
                             font-size: 14px;
-                            font-family: Poppins-Regular;
+                            font-family: Poppins Regular;
                             text-decoration: none;
                             @include padding-y(29px);
                         }
-
                         .active {
                             background-color: #2865DC;
                             @include padding-x(5px);
                             color: #FEB22B;
                             border-bottom: 3px solid #FEB22B;
                         }
-                    }  
+                    }
                 }
             }
-
             .nav-icon {
                 float: left;
-                @include padding(25px,0px,22px,120px);
-                
-
+                @include padding(25px, 0px, 22px, 100px);
                 a {
                     float: left;
                     cursor: pointer;
@@ -89,34 +86,28 @@ header {
                     }
                     &:nth-child(2),
                     &:nth-child(3),
-                    &:nth-child(4){
+                    &:nth-child(4) {
                         padding-left: 32px;
                     }
                 }
             }
-
             .nav-account {
                 float: right;
                 cursor: pointer;
                 z-index: 111;
                 transition: .5s;
-
                 // padding-left: 36px;  
-                
                 img.profil {
                     float: left;
                     width: 48px;
                     height: 48px;
                     @include padding-y(16px);
                 }
-
                 img.dropdown-p {
                     float: left;
                     @include padding-y(36.5px);
                     margin-left: 8px;
                     transition: .3s;
-
-
                     &:hover {
                         transform: rotate(180deg);
                         transition: .3s;
@@ -124,10 +115,10 @@ header {
                 }
             }
         }
-
         .popup-account {
             float: right;
-            position: relative;;
+            position: relative;
+            ;
             // padding-right: 100px;
             margin-top: -15px;
             display: none;
@@ -136,20 +127,18 @@ header {
                 position: relative;
                 width: unset;
                 background-color: #707070;
-                @include padding(10px,35px,10px,15px);
+                @include padding(10px, 35px, 10px, 15px);
                 @include border-top-right-radius(4px);
                 @include border-top-left-radius(4px);
-
                 span {
-                    font-family: Poppins-Medium;
+                    font-family: Poppins Medium;
                     font-size: 16px;
                     color: #FFFFFF;
                 }
             }
-
             .body {
                 position: relative;
-                width: unset;         
+                width: unset;
                 border: 1px solid rgba(0, 0, 0, 0.1);
                 @include border-bottom-right-radius(4px);
                 @include border-bottom-left-radius(4px);
@@ -157,22 +146,19 @@ header {
                 ul {
                     display: block;
                     list-style: none;
-                    
-                    
                     li {
-                        font-family: Poppins-Regular;
+                        font-family: Poppins Regular;
                         font-size: 16px;
-                        
                         color: rgba(0, 0, 0, 0.8);
                         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                         &:nth-child(1),
-                         &:nth-child(2),
-                         &:nth-child(3),
-                         &:nth-child(5){
+                        &:nth-child(2),
+                        &:nth-child(3),
+                        &:nth-child(5) {
                             background-color: #FFFFFF;
-
                             &:hover {
-                                background-color: #E6E6E6;;
+                                background-color: #E6E6E6;
+                                ;
                             }
                         }
                         span {
@@ -183,38 +169,31 @@ header {
                             background-color: #FFFFFF;
                             border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                             &:hover {
-                                background-color: #E6E6E6;;
+                                background-color: #E6E6E6;
+                                ;
                             }
-
                             img {
                                 float: right;
                                 margin-top: 10px;
-
                                 &:hover {
                                     transform: rotate(180deg);
                                     transition: .5s;
                                 }
                             }
                         }
-
                         a {
                             text-decoration: none;
                             color: rgba(0, 0, 0, 0.8);
                             padding-left: 15px;
                             @include padding-y(10px);
-
                         }
-
                         ul.popup-lang {
                             display: none;
-                            
-
                             li {
                                 background-color: #E6E6E6;
                                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                                 // @include padding-x(15px);
                                 a {
-
                                     img {
                                         padding-right: 5px;
                                         margin-top: 2px;
@@ -227,47 +206,43 @@ header {
                 }
             }
         }
-
         .popup-notif {
             float: right;
-            position: relative;;
+            position: relative;
+            ;
             margin-right: 105px;
             top: -15px;
             display: none;
-
             // @include border-radius(4px);
             border: 1px solid rgba(0, 0, 0, 0.1);
             .heading {
                 position: relative;
                 width: unset;
                 background-color: #707070;
-                @include padding(10px,35px,10px,15px);
+                @include padding(10px, 35px, 10px, 15px);
                 @include border-top-right-radius(4px);
                 @include border-top-left-radius(4px);
-
                 span {
-                    font-family: Poppins-Medium;
+                    font-family: Poppins Medium;
                     font-size: 16px;
                     color: #FFFFFF;
                 }
             }
-
             .body {
                 position: relative;
-                width: unset;   
+                width: unset;
                 background-color: #FFFFFF;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
                 span {
-                    @include padding(10px, 15px, 10px,15px);
+                    @include padding(10px, 15px, 10px, 15px);
                     display: block;
                     &:nth-child(1) {
-                        font-family: Poppins-Medium;
+                        font-family: Poppins Medium;
                         font-size: 18px;
                         color: rgba(0, 0, 0, 0.8);
                     }
                     &:nth-child(2) {
-                        font-family: Poppins-Regular;
+                        font-family: Poppins Regular;
                         font-size: 14px;
                         color: rgba(0, 0, 0, 0.8);
                     }
@@ -275,21 +250,19 @@ header {
             }
             .footer {
                 position: relative;
-                width: unset;   
+                width: unset;
                 background-color: #FFFFFF;
                 text-align: center;
                 @include padding-y(10px);
                 @include border-bottom-right-radius(4px);
                 @include border-bottom-left-radius(4px);
-
                 span {
                     color: #306EE7;
-                    font-family: Poppins-Medium;
+                    font-family: Poppins Medium;
                     font-size: 18px;
                 }
             }
         }
-
         .popup-chat {
             float: right;
             width: 30%;
@@ -303,19 +276,16 @@ header {
                 position: relative;
                 width: 91.5%;
                 background-color: #707070;
-                @include padding(10px,15px,10px,15px);
+                @include padding(10px, 15px, 10px, 15px);
                 @include border-top-right-radius(4px);
                 @include border-top-left-radius(4px);
-
                 span {
-                    font-family: Poppins-Medium;
+                    font-family: Poppins Medium;
                     font-size: 16px;
                     color: #FFFFFF;
                 }
             }
-
             .body {
-                
                 float: left;
                 // position: relative;
                 width: unset;
@@ -331,29 +301,25 @@ header {
                     // width: unset;
                     // flex: auto;
                     background-color: #FFFFFF;
-                    
-
-
                     img {
                         float: left;
                         // display: block;
-                        @include padding(10px,10px,10px,0);
+                        @include padding(10px, 10px, 10px, 0);
                     }
                     .txt {
                         float: left;
                         // display: block;
                         @include padding-y(15px);
                         // margin-right: 25px;
-
                         span {
                             display: block;
                             &:nth-child(1) {
-                                font-family: Poppins-Medium;
+                                font-family: Poppins Medium;
                                 font-size: 18px;
                                 color: rgba(0, 0, 0, 0.8);
                             }
                             &:nth-child(2) {
-                                font-family: Poppins-Regular;
+                                font-family: Poppins Regular;
                                 font-size: 14px;
                                 color: rgba(0, 0, 0, 0.8);
                             }
@@ -364,16 +330,13 @@ header {
                         position: relative;
                         // display: block;
                         @include padding-y(28px);
-                        
                         span {
-                            font-family: Poppins-Regular;
+                            font-family: Poppins Regular;
                             font-size: 14px;
                             color: rgba(0, 0, 0, 0.8);
                         }
                     }
                 }
-                
-                
             }
             .footer {
                 width: 100%;
@@ -384,16 +347,13 @@ header {
                 @include padding-y(10px);
                 @include border-bottom-right-radius(4px);
                 @include border-bottom-left-radius(4px);
-
                 span {
                     color: #306EE7;
-                    font-family: Poppins-Medium;
-                    font-size: 18px;   
-
+                    font-family: Poppins Medium;
+                    font-size: 18px;
                 }
             }
         }
-
         .popup-cart {
             float: right;
             width: 28%;
@@ -407,65 +367,58 @@ header {
                 position: relative;
                 width: 91%;
                 background-color: #707070;
-                @include padding(10px,15px,10px,15px);
+                @include padding(10px, 15px, 10px, 15px);
                 @include border-top-right-radius(4px);
                 @include border-top-left-radius(4px);
-
                 span {
-                    font-family: Poppins-Medium;
+                    font-family: Poppins Medium;
                     font-size: 16px;
                     color: #FFFFFF;
                 }
             }
-
             .body {
                 float: left;
                 width: 91%;
                 background-color: #FFFFFF;
                 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
                 @include padding-x(15px);
-
                 .msg {
                     position: relative;
                     width: 100%;
                     float: left;
                     background-color: #FFFFFF;
-                    
-
-
                     img {
                         float: left;
                         // display: block;
-                        @include padding(10px,10px,10px,0);
+                        @include padding(10px, 10px, 10px, 0);
                     }
                     .txt {
                         float: left;
                         width: 76%;
                         @include padding-y(15px);
                         // margin-right: 25px;
-
                         span {
                             display: block;
                             &:nth-child(1) {
-                                font-family: Poppins-Medium;
+                                font-family: Poppins Medium;
                                 font-size: 18px;
                                 color: rgba(0, 0, 0, 0.8);
                             }
                             &:nth-child(2) {
-                                font-family: Poppins-Regular;
+                                font-family: Poppins Regular;
                                 font-size: 14px;
                                 float: left;
                                 color: rgba(0, 0, 0, 0.8);
                             }
                             &:nth-child(3) {
                                 float: right;
-                                font-family: Poppins-Regular;
+                                font-family: Poppins Regular;
                                 font-size: 14px;
                                 color: #306EE7;
                             }
                         }
                     }
-                }  
+                }
             }
             .footer {
                 width: 100%;
@@ -476,15 +429,617 @@ header {
                 @include padding-y(10px);
                 @include border-bottom-right-radius(4px);
                 @include border-bottom-left-radius(4px);
-
                 span {
                     color: #306EE7;
-                    font-family: Poppins-Medium;
-                    font-size: 18px;   
-
+                    font-family: Poppins Medium;
+                    font-size: 18px;
                 }
             }
         }
     }
 }
 
+// bagian banner
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: url("./../images/BG.jpg");
+    background-size: cover;
+    margin-top: 75px;
+    // display: flex;
+    .container {
+        max-width: 83%;
+        margin: 0 auto;
+        .text-banner {
+            float: left;
+            box-sizing: border-box;
+            h1 {
+                padding-top: 80px;
+                font-family: PlayfairDisplay Medium;
+                font-size: 70px;
+                color: #FFFFFF;
+            }
+            p {
+                font-family: Poppins Regular;
+                font-size: 16px;
+                color: #FFFFFF;
+                padding-top: 16px;
+                margin-bottom: 32px;
+            }
+            a {
+                font-size: 16px;
+                color: #FFFFFF;
+                text-decoration: none;
+                background-color: #FEB22B;
+                @include padding(17px,
+                60px,
+                17px,
+                60px);
+                border-radius: 4px;
+            }
+        }
+    }
+    .testi-banner {
+        width: 52%;
+        height: 100vh;
+        float: right;
+        box-sizing: border-box;
+        img {
+            width: 100%;
+            height: 100%;
+            // position: relative;
+        }
+    }
+}
+
+// bagian about
+.about {
+    width: 100%;
+    float: left;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+
+    // box-sizing: border-box;
+    .container {
+        max-width: 83%;
+        margin: 0 auto;
+        padding-top: 105px;
+        .img-about {
+            float: left;
+            background: url("./../images/apaituwarungkita/apaitu.png");
+            background-size: 100% 100%;
+            height: 444px;
+            width: 444px;
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .content-about {
+            float: right;
+            h1 {
+                padding-top: 50px;
+                font-size: 46px;
+                color: rgba(0, 0, 0, .8);
+                font-family: PlayfairDisplay Medium;
+                span:nth-child(1) {
+                    color: rgba(48, 110, 231, 1);
+                }
+                span:nth-child(2) {
+                    color: rgba(254, 178, 43, 1);
+                }
+            }
+            p {
+                font-size: 16px;
+                font-family: Poppins Regular;
+                color: rgba(0, 0, 0, 0.8);
+                padding-top: 16px;
+            }
+            .btn {
+                padding-top: 16px;
+                display: block;
+                a {
+                    width: 100%;
+                    color: #306EE7;
+                    font-size: 16px;
+                    font-family: Poppins Regular;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// Bagian Search items
+.search-items {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    @include padding-y(60px);
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    // box-sizing: border-box;  
+    .container {
+        max-width: 83%;
+        margin: 0 auto;
+        .title {
+            text-align: center;
+            // padding-top: 120px;
+            h1 {
+                font-size: 46px;
+                color: rgba(0,0,0,.8);
+                font-family: PlayfairDisplay Medium;
+                span {
+                    color:rgba(254, 178, 43, 1);
+                }
+            }
+            p {
+                font-size: 16px;
+                font-family: Poppins Regular;
+                color: rgba(0, 0, 0, .8);
+                padding-top: 8px;
+            }
+        }
+        #category-search-items {
+            width: 100%;
+            text-align: center;
+            padding-top: 32px;
+            display: flex;
+            .navigation {
+                position: absolute;
+                left: 50%;
+                z-index: 99;
+                transform: translateX(-50%);
+                // display: flex;
+                .button {
+                    font-family: Poppins Medium;
+                    font-size: 16px;
+                    color: rgba(73, 60, 60, 0.8);
+                    border: 1px solid rgba(0, 0, 0, .1);
+                    background-color: #fff;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    outline: none;
+                    box-sizing: border-box;
+                    transition: .2s;
+                    @include padding(12px,
+                    32px,
+                    12px,
+                    32px);
+                    &:nth-child(2) {
+                        @include margin-x(20px);
+                    }
+                    &:hover {
+                        transition: .2s;
+                        background-color: #306EE7;
+                        color: #FFFFFF;
+                    }
+
+                }
+
+                // #cat1 ~ .s1,
+                // #cat2 ~ .s2,
+                // #cat3 ~ .s3 {
+                //     z-index: 9;
+                //     animation: scroll 1s ease-in-out;
+                // }
+
+                // @keyframes scroll {
+                //     0% { opacity: .4;}
+                //     100% { opacity: 1;}
+                // }
+
+                // #cat1 ~ .navigation #discount,
+                // #cat2 ~ .navigation #popular,
+                // #cat3 ~ .navigation #foryou {
+                //     transition: .2s;
+                //     background-color: #306EE7;
+                //     color: #FFFFFF;
+                // }
+                .aktif {
+                    transition: .2s;
+                    background-color: #306EE7;
+                    color: #FFFFFF;
+                }
+            }
+            input[name="cat"] {
+                position: absolute;
+                visibility: hidden;
+            }
+            .category {
+                width: 100%;
+                padding-top: 80px;
+                transition: 0.6s;
+                // position: absolute;
+                .cat {
+                    box-sizing: border-box;
+                    width: unset;
+                    float: left;
+                    flex: 1;
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4) {
+                        margin-left: 26px;
+                    }
+                    .top {
+                        // float: left;
+                        display: flex;
+                        box-sizing: border-box;
+                        @include border-top-left-radius(4px);
+                        @include border-top-right-radius(4px);
+                        .disc {
+                            @include border-top-left-radius(4px);
+                            position: absolute;
+                            background-color: #FEB22B;
+                            span {
+                                font-family: Poppins Medium;
+                                font-size: 15px;
+                                color: #FFFFFF;
+                                @include padding(7px,
+                                5px,
+                                7px,
+                                5px);
+                            }
+                        }
+                        img {
+                            // position: absolute;
+                            @include border-top-left-radius(4px);
+                            @include border-top-right-radius(4px);
+                        }
+                        .love {
+                            box-sizing: border-box;
+                            border-radius: 4px;
+                            margin-top: 9px;
+                            position: absolute;
+                            margin-left: 200px;
+                            background-color: #FFFFFF;
+                            img {
+                                width: 24px;
+                                height: 24px;
+                                position: relative;
+                                float: left;
+                                padding: 8px;
+                                cursor: pointer;
+                            }
+                        }
+                        .city {
+                            position: absolute;
+                            margin-top: 182px;
+                            @include padding(6px,
+                                18px,
+                                6px,
+                                18px);
+                            @include border-top-right-radius(4px);
+                            @include border-bottom-left-radius(4px);
+                            background-color: #fff;
+                            border: 1px solid rgba(0, 0, 0, .1);
+                            span {
+                                letter-spacing: 1px;
+                                font-family: Poppins Medium;
+                                font-size: 16px;
+                                color: rgba(0, 0, 0, .8);
+                            }
+                        }
+                    }
+                    .bottom {
+                        width: 100%;
+                        background-color: #FFFFFF;
+                        @include border-bottom-left-radius(4px);
+                        @include border-bottom-right-radius(4px);
+                        border: 1px solid rgba(0, 0, 0, .1);
+                        box-sizing: border-box;
+                        @include padding(10px,
+                            0,
+                            10px,
+                            10px);
+                        h2 {
+                            text-align: left;
+                            
+                            color: #306EE7;
+                            font-size: 18px;
+                            font-family: Poppins Regular;
+                        }
+                        .rate {
+                            width: 100%;
+                            // padding-top: 1px;
+                            display: flex;
+
+                            svg {
+                                padding-top: 2px;
+                            }
+
+                            span {
+                                padding-left: 5px;
+                                
+                                font-size: 16px;
+                                color: rgba(0, 0, 0, .5);
+                                font-family: Poppins Regular;
+                            }
+                        }
+
+                        .price {
+                            width: 100%;
+                            display: flex;
+
+                            span {
+                                font-family: Poppins Regular;
+                                font-size: 18px;
+
+                                &:nth-child(1) {
+                                    color: #306EE7;
+                                }
+
+                                &:nth-child(2) {
+                                    padding-left: 10px;
+                                    color: rgba(0, 0, 0, .5);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        a {
+            margin-top: 32px;
+            color: #306EE7;
+            font-family: Poppins Regular;
+            font-size: 16px;
+            border: 2px solid #306EE7;
+            border-radius: 4px;
+            @include padding(18px,31px,18px,31px);
+            text-decoration: none;
+            outline: none;
+        }
+    }
+}
+
+// Bagian Work
+.work {
+   
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    @include padding-y(60px);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    
+    .bg {
+        float: left;
+        width: 114.5px;
+        height: 489px;
+        background-color: #F5F5F5;
+        
+    }
+    .container {
+        max-width: 83%;
+        margin: 0 auto;
+
+        .flow{
+            width: 53%;
+            background-color: #F5F5F5;
+            // position: absolute;
+            box-sizing: border-box;
+            padding-top: 97px;
+            padding-bottom: 91px;
+            float: left;
+
+            h1 {
+                font-family: PlayfairDisplay Medium;
+                font-size: 46px;
+                color: rgba(0, 0, 0, .8);
+                
+                span {
+                    color: rgba(254, 178, 43, 1);
+                }
+            }
+
+            p {
+                font-family: Poppins Regular;
+                font-size: 16px;
+                color: rgba(0,0,0,.8);
+                padding-top: 16px;
+            }
+            .flow-img {
+                display: flex;
+                padding-top: 16px;
+                width: 100%;
+                box-sizing: border-box;
+
+                .step {
+                    width: unset;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    svg {
+                        display: block;
+                        padding-bottom: 16px;
+                        
+                        margin: 0 auto;
+                    }
+
+                    span {
+                        font-family: Poppins Medium;
+                        font-size: 16px;
+                        color: rgba(0, 0, 0, .8);
+                    }
+                }
+
+                .arrow {
+                    display: flex;
+                    
+                    svg {
+                        @include padding-x(16px);
+                        @include padding-y(35%);
+                    }
+                }
+            }
+            .btn {
+                padding-top: 22px;
+                display: block;
+                a {
+                    width: 100%;
+                    color: #306EE7;
+                    font-size: 16px;
+                    font-family: Poppins Regular;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .female {
+            box-sizing: border-box;
+            width: 47%;
+            background-color: #F5F5F5;
+            float: right;
+
+            img {
+                padding-left: 70px;
+                width: 485px;
+                height: 485px;
+            }
+        }
+    }
+    
+}
+
+// Edukatif Page
+.edu {
+    position: relative;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    // border-top: 1px solid rgba(0,0,0,.1);
+    @include padding-y(60px);
+
+    .container {
+        max-width: 83%;
+        margin: 0 auto;
+        .title {
+            width: 100%;
+            text-align: center;
+    
+            h1 {
+                font-family: PlayfairDisplay Medium;
+                font-size: 46px;
+                color: rgba(0, 0, 0, 0.8);
+    
+                span {
+                    color: rgba(254, 178, 43, 1);
+                }
+            }
+    
+            p {
+                padding-top: 8px;
+                font-family: Poppins Regular;
+                font-size: 16px;
+                color: rgba(0, 0, 0, .8);
+            }
+        }
+    
+        .edu-img {
+            padding-top: 32px;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: left;
+    
+            .edu1 {
+                float: left;
+                width: 260px;
+                border-radius: 4px;
+                box-sizing: border-box;
+
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    margin-left: 26px;
+                }
+    
+                .top {
+                    width: 100%;
+                    height: 165px;
+                    
+                    box-sizing: border-box;
+                    
+                    .date {
+                        padding-top: 15px;
+                        padding-left: 25px;
+                        position: absolute;
+                        z-index: 3;
+
+                        span {
+                            font-family: Poppins Regular;
+                            color: #FFFFFF;
+                            font-size: 14px;
+                        }
+                        .border {
+                            margin-top: 10px;
+                            width: 28px;
+                            border: 2px solid #306EE7;
+                        }
+                    }
+                    .img {
+                        cursor: pointer;
+                        img {
+                            z-index: 1;
+                            position: absolute;
+                        }
+                        .hover {
+                            opacity: 0;
+                            position: absolute;
+                            transition: .75s;
+                            z-index: 2;
+                            background-color: rgba(0,0,0,.2);
+                            img {
+                                @include padding(48px,95px,47px,95px);
+                            }
+
+                            &:hover {
+                                opacity: 1;
+                                // background-color: rgba(0,0,0,.2);
+                                transition: .75s;
+                            }
+                        }
+                    }
+                }
+                .bottom {
+                    height: 165px;
+                    width: 100%;
+                    margin-top: -3px;
+                    box-sizing: border-box;
+                    padding-top: 10px;
+                    @include padding-x(16px);
+                    border: 1px solid rgba(0, 0, 0, .1);
+
+                    h3 {
+                        font-family: Poppins Regular;
+                        color: rgba(0, 0, 0, .8);
+                        font-size: 17px;
+                        
+                    }
+
+                    p {
+                        font-family: Poppins Regular;
+                        color: rgba(0, 0, 0, .5);
+                        font-size: 14px;
+                        padding-top: 8px;
+                    }
+                }
+            }
+        }
+
+        a {
+            
+            margin-top: 32px;
+            color: #306EE7;
+            font-family: Poppins Regular;
+            font-size: 16px;
+            border: 2px solid #306EE7;
+            border-radius: 4px;
+            @include padding(18px,31px,18px,31px);
+            text-decoration: none;
+            outline: none;
+        }
+    }
+}
