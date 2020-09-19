@@ -1,0 +1,445 @@
+@layout('layouts.app')
+
+@section('meta')
+
+@endsection
+
+@section('title')
+	<title>Laman Edukatif | WarungKita</title>	
+@endsection
+
+@section('js')
+
+@endsection
+
+@section('css')
+<link rel="stylesheet" href="assets/css/edukatif.css">
+
+@endsection
+
+@section('helpers')
+{{title('Beranda')}}
+@endsection
+
+
+@section('nav')
+<li><a href="index.html">Beranda</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="edukatif.html" class="active">Laman Edukatif</a></li>
+<li><a href="galeri.html">Galeri Inspiratif</a></li>
+<li><a href="#market-place">Toko</a></li>
+@endsection
+
+
+@section('content')
+<!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <div class="box"> 
+                <span><a href="index.html" class="home">Beranda</a></span>
+                <span> / </span>
+                <span><a href="edukatif.html" class="educ">Laman Edukatif</a></span>
+            </div>
+        </div>
+    </section>
+<!-- Akhir Breadcrumb -->
+
+<!-- Search -->
+<section class="cari">
+    <div class="container">
+        <div class="bg-cari">
+            <div class="box-cari">
+                <input type="text" placeholder="Cari">
+                <img src="assets/images/search2.png" alt="">
+            </div>
+            <div class="dropdown">
+                <select name="" id="">
+                    <option value="">Urutkan</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Akhir Serach -->
+
+<!-- Populer -->
+<section class="populer">
+    <div class="container">
+        <div class="title">
+            <p>Artikel <span>Populer</span></p>
+            <div class="garis"></div>
+        </div>
+        <div class="artikel-top">
+            <div class="artikel-left">
+                <img src="assets/images/edukatif/foto 1-min.jpg" alt="">
+                <div class="shadow">
+                    <a href="#kemananich">
+                        <span>
+                            Begini Cara Ciputra Development (CTRA)
+                            <br> Antisipasi Fase New Normal
+                        </span>
+                        <span>
+                            Di Tengah Tekanan Akibat spanandemi Virus Corona, PT Ciputra Development 
+                            <br>Tbk (CTRA) Mereview Kembali Proyek Yang Belum Dimulai. Hal Ini Dila...
+                        </span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="artikel-right">
+                <img src="assets/images/edukatif/foto 2-min.jpg" alt="">
+                <div class="shadow">
+                    <a href="#kemananich">
+                        <span>
+                            BDi Era New Normal, Industri <br>
+                            Ini akan Jadi Primadona
+                        </span>
+                        <span>
+                            Pandemi global Covid-19 <br>
+                            membuat pemerintah harus...
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--  popular bottom  -->
+        <div class="edu-img">
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>14 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel1.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>Hal-hal yang perlu anda <br>
+						persiapkan untuk masuk <br>
+                        dunia industri</h3>
+                        <p>
+                            Persiapan sebelum memasuki 
+                            <br>dunia kerja tak jarang jadi m...
+                        </p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>16 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel2.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						Apa itu Era Revolusi <br>
+						Industri 4.0 : Dampak, <br>
+						dan Mengatasinya
+					</h3>
+					<p>
+						Revolusi Industri 4.0 merupakan <br>
+						istilah yang sudah tidak asing l...
+					</p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>17 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel3.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						13 Prinsip Sukses dari <br>
+						Think and Grow Rich
+					</h3>
+					<p>
+						Berbicara mengenai kesuksesan 
+						tidak akan pernah habisnya. be..
+					</p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>19 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel4.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						5 Tips Bisnis UKM <br> Bertahan saat New <br> Normal
+					</h3>
+					<p>
+						Dunia sedang dilanda bencana <br>
+						yang membuat banyak orang...
+					</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
+<!-- Akhir Populer -->
+
+<!-- Populer Lainnya -->
+<section class="populer-lainnya">
+    <div class="container">
+        <div class="title">
+            <p>Artikel <span>Lainnya</span></p>
+            <div class="garis"></div>
+        </div>
+        
+        <!--  lainnya bottom  lainnya 1 -->
+        <div class="edu-img">
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>14 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel4.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+                        Ini 3 Hal yang Bisa Kamu 
+                        Lakukan di Masa New 
+                        Normal
+                    </h3>
+                        <p>
+                            Pandemi yang mewabah di 
+                            seluruh dunia menghadirkan... 
+                        </p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>16 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel3.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						Daftar 30 Pekerjaan 
+                        yang Dibutuhkan di 
+                        Era New Normal
+					</h3>
+					<p>
+                        Menteri Ketenagakerjaan Ida 
+                        Fauziyah mengungkap seju...
+					</p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>17 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel2.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						New Normal, Ini 
+                        Upaya Kemenperin 
+                        Dorong Industri 4.0
+					</h3>
+					<p>
+						Kementerian Perindustrian 
+                        menilai fase kenormalan baru..
+					</p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>19 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel1.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						Bagaimana Seharusnya 
+                        Pelaku Bisnis Menyikapi 
+                        Era New Normal?
+					</h3>
+					<p>
+						Kata new normal atau normal 
+                        baru menjadi sangat popular...
+					</p>
+				</div>
+			</div>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <!--  lainnya bottom  lainnya 2-->
+        <div class="edu-img">
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>14 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel2.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+                        Industri Perfilman Berpeluang Maju Di Era New Normal
+                    </h3>
+                        <p>
+                            Dunia perfilman dan komik 
+                            nasional dinilai berpeluang da...
+                        </p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>16 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/artikel/foto_artikel4.png" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						New Normal, Industri 
+                        Properti Mencari Titik 
+                        Keseimbangan Baru
+					</h3>
+					<p>
+                        Pertumbuhan indeks harga 
+                        properti residensial (IHPR) yan..
+					</p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>17 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img src="assets/images/edukatif/foto 2-min.jpg" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						Belajar Online Jadi Solusi Belajar Era New Normal
+					</h3>
+					<p>
+						Di tahun 2020 ini banyak sistem 
+                        yang berubah termasuk siste...
+					</p>
+				</div>
+			</div>
+
+			<div class="edu1">
+				<div class="top">
+					<div class="date">
+						<span>19 Agustus, 2020</span>
+						<div class="border"></div>
+					</div>
+					<div class="img">
+						<img  src="assets/images/edukatif/foto 1-min.jpg" alt="">
+						<div class="hover">
+							<img src="assets/images/view.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="bottom">
+					<h3>
+						Mau Usaha Tapi Sulit 
+                        Modal di New Normal? 
+                        Pakai Cara Ini Saja
+					</h3>
+					<p>
+						Tak bisa dimungkiri pandemi 
+                        Covid-19 menjadi mimp buru...
+					</p>
+				</div>
+			</div>
+		</div>
+    </div>
+</section>
+<!-- Akhir Populer lainnya -->
+
+<!-- Pagination -->
+<section class="pagination">
+    <div class="container">
+        <div class="area">
+            <img src="assets/images/arrow left.png" alt="">
+            <span>1</span>
+            <span>2</span>
+            <img src="assets/images/arrow right.png" alt="">
+        </div>
+    </div>
+</section>
+<!-- Akhir Pagination -->
+@endsection

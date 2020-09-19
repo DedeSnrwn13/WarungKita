@@ -1,0 +1,102 @@
+@layout('layouts.app')
+
+@section('meta')
+
+@endsection
+
+@section('title')
+	<title>Galeri Inspiratif | WarungKita</title>	
+@endsection
+
+@section('js')
+
+@endsection
+
+@section('css')
+<link rel="stylesheet" href="assets/css/galeri.css">
+
+@endsection
+
+@section('helpers')
+{{title('Beranda')}}
+@endsection
+
+
+@section('nav')
+<li><a href="index.html">Beranda</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="edukatif.html">Laman Edukatif</a></li>
+<li><a href="galeri.html" class="active">Galeri Inspiratif</a></li>
+<li><a href="#market-place">Toko</a></li>
+@endsection
+
+@section('content')
+<!-- Breadcrumb -->
+<section class="breadcrumb">
+    <div class="container">
+        <div class="box"> 
+            <span><a href="index.html" class="home">Beranda</a></span>
+            <span> / </span>
+            <span><a href="galeri.html" class="educ">Galeri Inspiratif</a></span>
+        </div>
+    </div>
+</section>
+<!-- Akhir Breadcrumb -->
+
+<!-- Search -->
+<section class="cari">
+<div class="container">
+    <div class="bg-cari">
+        <div class="box-cari">
+            <input type="text" placeholder="Cari">
+            <img src="assets/images/search2.png" alt="">
+        </div>
+        <div class="dropdown">
+            <select name="" id="">
+                <option value="">Urutkan</option>
+            </select>
+        </div>
+    </div>
+</div>
+</section>
+<!-- Akhir Serach -->
+
+<div class="galeri">
+    <div class="container">
+        <div class="title">
+            <p>Galeri <span>Inspiratif</span></p>
+            <div class="garis"></div>
+        </div>
+
+        <div class="gall-img">
+			<div class="gall">
+				<img src="assets/images/edukatif/foto 1-min.jpg" alt="">
+				<div class="hover">
+					<img src="assets/images/view.png" alt="">
+				</div>
+			</div>
+
+			<div class="gall">
+				<img src="assets/images/edukatif/foto 2-min.jpg" alt="">
+				<div class="hover">
+					<img src="assets/images/view.png" alt="">
+				</div>
+			</div>
+
+			<div class="gall">
+				<img src="assets/images/edukatif/foto 3-min.jpg" alt="">
+				<div class="hover">
+					<img src="assets/images/view.png" alt="">
+				</div>
+			</div>
+
+			<div class="gall">
+				<img src="assets/images/edukatif/foto 4-min.jpg" alt="">
+				<div class="hover">
+					<img src="assets/images/view.png" alt="">
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+@endsection
