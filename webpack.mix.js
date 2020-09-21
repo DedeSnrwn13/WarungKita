@@ -11,7 +11,7 @@ mix.sass('resources/sass/style.scss', 'dist/assets/css')
    .sass('resources/sass/edukatif.scss', 'dist/assets/css')
    .sass('resources/sass/navbar.scss', 'dist/assets/css')
    .sass('resources/sass/galeri.scss', 'dist/assets/css')
-
+   .sass('resources/sass/toko.scss', 'dist/assets/css')
 
 .options({
     processCssUrls: false,

@@ -1,0 +1,233 @@
+@layout('layouts.app')
+
+@section('meta')
+
+@endsection
+
+@section('title')
+	<title>Laman Toko | WarungKita</title>	
+@endsection
+
+@section('js')
+
+@endsection
+
+@section('css')
+<link rel="stylesheet" href="assets/css/toko.css">
+
+@endsection
+
+@section('helpers')
+{{title('Beranda')}}
+@endsection
+
+
+@section('nav')
+<li><a href="index.html">Beranda</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="edukatif.html">Laman Edukatif</a></li>
+<li><a href="galeri.html">Galeri Inspiratif</a></li>
+<li><a href="toko.html" class="active">Toko</a></li>
+@endsection
+
+@section('content')
+<!-- Cari & Filter -->
+    <section class="carfil">
+        <div class="container">
+            <div class="filter-dropdown">
+                <div class="dropdown-select">
+                    <svg id="location" xmlns="http://www.w3.org/2000/svg" width="28.038" height="28.038" viewBox="0 0 28.038 28.038">
+                        <path id="Path_2772" data-name="Path 2772" d="M0,0H28.038V28.038H0Z" fill="none"/>
+                        <path id="Path_2773" data-name="Path 2773" d="M12.344,1.667A8.172,8.172,0,0,0,4.167,9.844c0,6.133,8.178,15.187,8.178,15.187s8.178-9.054,8.178-15.187A8.172,8.172,0,0,0,12.344,1.667ZM6.5,9.844a5.841,5.841,0,1,1,11.682,0c0,3.365-3.365,8.4-5.841,11.542C9.914,18.267,6.5,13.174,6.5,9.844Z" transform="translate(1.674 0.67)" opacity="0.8"/>
+                        <circle id="Ellipse_20" data-name="Ellipse 20" cx="2.921" cy="2.921" r="2.921" transform="translate(11.098 7.594)" opacity="0.8"/>
+                    </svg>
+                    <span class="select">Indonesia</span>
+                    <img src="assets/images/toko/drop.png" alt="">
+                </div>
+
+                <div class="dropdown-list">
+                    <div class="dropdown-list_item">Inggris</div>
+                    <div class="dropdown-list_item">Singapura</div>
+                </div>
+            </div>
+
+            <div class="cari">
+                <input type="text" placeholder="Mau belanja apa hari ini?">
+                <img src="assets/images/search.png" alt="">
+            </div>
+        </div>
+    </section>
+<!-- Cari & Filter -->
+
+<!-- Banner -->
+    <section class="banner-toko">
+        <div class="container">
+            <div class="slider">
+                <div class="slider_items">
+                    <img src="assets/images/toko/Banner web 1.jpg" alt="banner images">
+                </div>
+                <div class="slider_items">
+                    <img src="assets/images/toko/Banner web 2.jpg" alt="banner images">
+                </div>
+                <div class="slider_items">
+                    <img src="assets/images/toko/Banner web 3.jpg" alt="banner images">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Akhir Banner -->
+
+<!-- Yang lagi diskon -->
+<section class="diskon">
+    <div class="container">
+        <div class="disk">
+            <div class="title">
+                <h1>Sedang Diskon!</h1>
+            </div>
+            <div class="cat">
+                <div class="top">
+                    <div class="disc">
+                        <span>-30%</span>
+                    </div>
+                    <img src="assets/images/produk/diskon/jeruk_mandarin.png" alt="">
+                    <div class="love">
+                        <img src="assets/images/un_hati.png" alt="">
+                    </div>
+                    <div class="city">
+                        <span>Jakarta</span>
+                    </div>
+                </div>
+                  <div class="bottom">
+                    <h2>Jeruk Mandarin</h2>
+                    <div class="rate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="17" viewBox="0 0 110 17">
+                            <g id="Stars" transform="translate(0 -3)">
+                              <path id="Polygon_4" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(0 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-2" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(23 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-3" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(46 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-4" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(69 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-5" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(92 3)" fill="#fdcc0d"/>
+                            </g>
+                        </svg>
+                        <span>(1312)</span>
+                    </div>
+                    <div class="price">
+                        <span>Rp34.600</span>
+                        <span><del>Rp43.000</del></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cat">
+                <div class="top">
+                    <div class="disc">
+                        <span>-40%</span>
+                    </div>
+                    <img src="assets/images/produk/diskon/pisang_cavendish.png" alt="">
+                    <div class="love">
+                        <img src="assets/images/un_hati.png" alt="">
+                    </div>
+                    <div class="city">
+                        <span>Bogor</span>
+                    </div>
+                </div>
+                  <div class="bottom">
+                    <h2>Pisan Cavendish</h2>
+                    <div class="rate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="17" viewBox="0 0 110 17">
+                            <g id="Stars" transform="translate(0 -3)">
+                              <path id="Polygon_4" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(0 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-2" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(23 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-3" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(46 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-4" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(69 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-5" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(92 3)" fill="#fdcc0d"/>
+                            </g>
+                        </svg>
+                        <span>(1024)</span>
+                    </div>
+                    <div class="price">
+                        <span>Rp15.000</span>
+                        <span><del>Rp15.000</del></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cat">
+                <div class="top">
+                    <div class="disc">
+                        <span>-20%</span>
+                    </div>
+                    <img src="assets/images/produk/diskon/ceri_manies.png" alt="">
+                    <div class="love">
+                        <img src="assets/images/un_hati.png" alt="">
+                    </div>
+                    <div class="city">
+                        <span>Sukabumi</span>
+                    </div>
+                </div>
+                  <div class="bottom">
+                    <h2>Ceri Manies</h2>
+                    <div class="rate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="17" viewBox="0 0 110 17">
+                            <g id="Stars" transform="translate(0 -3)">
+                              <path id="Polygon_4" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(0 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-2" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(23 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-3" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(46 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-4" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(69 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-5" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(92 3)" fill="#fdcc0d"/>
+                            </g>
+                        </svg>
+                        <span>(42)</span>
+                    </div>
+                    <div class="price">
+                        <span>Rp19.800</span>
+                        <span><del>Rp22.000</del></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cat">
+                <div class="top">
+                    <div class="disc">
+                        <span>-10%</span>
+                    </div>
+                    <img src="assets/images/produk/diskon/lemon_kuning.png" alt="">
+                    <div class="love">
+                        <img src="assets/images/un_hati.png" alt="">
+                    </div>
+                    <div class="city">
+                        <span>Surabaya</span>
+                    </div>
+                </div>
+                  <div class="bottom">
+                    <h2>Lemon Kuning</h2>
+                    <div class="rate">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="110" height="17" viewBox="0 0 110 17">
+                            <g id="Stars" transform="translate(0 -3)">
+                              <path id="Polygon_4" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(0 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-2" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(23 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-3" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(46 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-4" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(69 3)" fill="#fdcc0d"/>
+                              <path id="Polygon_4-5" data-name="Polygon 4" d="M9,0l2.25,6.322L18,6.493l-5.359,4.079L14.562,17,9,13.2,3.438,17l1.922-6.428L0,6.493l6.75-.171Z" transform="translate(92 3)" fill="#fdcc0d"/>
+                            </g>
+                        </svg>
+                        <span>(1312)</span>
+                    </div>
+                    <div class="price">
+                        <span>Rp27.000</span>
+                        <span><del>Rp25.000</del></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Akhir yang lagi diskon -->
+@endsection
+
+@section('footer')
+<script>
+    
+
+</script>
+@endsection
