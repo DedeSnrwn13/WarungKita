@@ -34,7 +34,17 @@ $(document).ready(function(){
 		autoplaySpeed: 2300,
 		prevArrow: '<img src="assets/images/toko/Before.png" class="slick-prev"  alt="Prev Images">',
 		nextArrow: '<img src="assets/images/toko/Next.png" class="slick-next" alt="Next Images">',
-    });
+	});
+	
+	// slick toko kategori
+    // $('.kat').slick({
+	// 	infinite: true,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: false,
+	// 	dots: true,
+    //     autoplay: false,
+	// 	arrows: false,
+    // });
 });
 
 
